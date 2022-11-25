@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 (async () => {
-  const db = await MongoUtil.connect(mongoUrl, halal_eateries);
+  const db = await MongoUtil.connect(mongoUrl, "halal_eateries");
 
   // GET
   try {

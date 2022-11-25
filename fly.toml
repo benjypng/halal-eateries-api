@@ -1,0 +1,11 @@
+app = "halal-eateries-api"
+
+[env]
+	MONGO_URL = "mongodb+srv://root:lwE62bz0EAis@cluster0.n61vm.mongodb.net/?retryWrites=true"
+
+[build]
+  builder = "heroku/buildpacks:20"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
